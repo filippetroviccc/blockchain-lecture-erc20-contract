@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d44bd63-06e0-4b6d-8bda-c6946483eb0b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contracts/ERC20.sol" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/ERC20.sol" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/erc20.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/erc20.test.js" afterDir="false" />
     </list>
@@ -17,10 +19,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/erc20.test.js">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+            <state relative-caret-position="29">
+              <caret line="1" column="6" lean-forward="true" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -43,8 +45,9 @@
         <option value="$PROJECT_DIR$/build/contracts/ERC20Token.json" />
         <option value="$PROJECT_DIR$/truffle-config.js" />
         <option value="$PROJECT_DIR$/migrations/2_deploy_erc20.js" />
-        <option value="$PROJECT_DIR$/contracts/ERC20.sol" />
         <option value="$PROJECT_DIR$/test/erc20.test.js" />
+        <option value="$PROJECT_DIR$/contracts/ERC20.sol" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -105,6 +108,7 @@
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -128,21 +132,21 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1563953602936</updated>
-      <workItem from="1563953604332" duration="7761000" />
+      <workItem from="1563953604332" duration="8499000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7761000" />
+    <option name="totallyTimeSpent" value="8499000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1536" height="864" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.27734375" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.27734375" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" weight="0.7372685" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.7372685" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="2" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
@@ -233,17 +237,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/contracts/ERC20.sol">
+    <entry file="file://$PROJECT_DIR$/test/erc20.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="691">
-          <caret line="90" column="16" lean-forward="true" selection-start-line="90" selection-start-column="16" selection-end-line="90" selection-end-column="16" />
+        <state relative-caret-position="667">
+          <caret line="23" column="3" lean-forward="true" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/erc20.test.js">
+    <entry file="file://$PROJECT_DIR$/contracts/ERC20.sol">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        <state relative-caret-position="430">
+          <caret line="87" lean-forward="true" selection-start-line="87" selection-end-line="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="1" column="6" lean-forward="true" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
         </state>
       </provider>
     </entry>
