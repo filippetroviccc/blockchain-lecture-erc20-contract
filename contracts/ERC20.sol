@@ -87,6 +87,7 @@ contract ERC20Token is IERC20{
 // changes
 
 // @TODO COMPILE [check]
-// @TODO MIGRATE [check] (deploy on local net, testnet)
+// @TODO MIGRATE [check] (deploy on local net)
 // @TODO TESTING
 // @TODO CREATING CUSTOM BEST TOKEN
+// @TODO MIGRATE [] (deploy on test net)
