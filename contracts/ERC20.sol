@@ -5,7 +5,7 @@ import "./IERC20.sol";
 
 contract ERC20Token is IERC20{
 
-    uint256 public totalSupply;
+    uint256 public supply;
 
     // 0x13243234.. -> 34392849 BEST TOKENS
     mapping(address => uint256) public balances;
@@ -13,7 +13,7 @@ contract ERC20Token is IERC20{
     // A -> "approving" -> B to spend some "value"
     // B is sending from A -> C (transferFrom)
     // ((allowance - > spender) -> tokenOwner) -> value
-    mapping(address => mapping(address => uint256)) allowance;
+    mapping(address => mapping(address => uint256)) allowances;
 
     // gas - how much of proceeds to execute
     // gasPrice - how much we willing for an instance of gas
@@ -22,21 +22,21 @@ contract ERC20Token is IERC20{
     event Transfer(address from, address to, uint256 tokens);
     event Approve(address owner, address spender, uint256 tokens);
 
-    function totalSupply() public view returns (uint256) { // 0 gas
-        return totalSupply;
+    function totalSupply() external view returns (uint256) { // 0 gas
+        return supply;
     }
 
-    function balanceOf(address account) public view returns (uint256) {
+    function balanceOf(address account) external view returns (uint256) {
         return balances[account];
     }
 
-    function allowance(address tokenOwner, address spender) public view returns (uint256) {
-        return allowance[spender][tokenOwner];
+    function allowance(address tokenOwner, address spender) external view returns (uint256) {
+        return allowances[spender][tokenOwner];
     }
 
     // we want to send from caller -> to  = value
     // transfer -
-    function transfer(address to, uint256 value) public returns (bool success) {
+    function transfer(address to, uint256 value) external returns (bool success) {
         require(balances[msg.sender] >= value);
 
         balances[msg.sender] -= value;
@@ -50,12 +50,12 @@ contract ERC20Token is IERC20{
     // failed
     // revert -> my code thrown err
     // require = false  => gas back
-    function approve(address spender, uint256 value) public returns (bool) {
+    function approve(address spender, uint256 value) external returns (bool) {
         require(spender != address(0));
-        require(allowance[spender][msg.sender] == 0);
+        require(allowances[spender][msg.sender] == 0);
         require(balances[msg.sender] >= value);
 
-        allowance[spender][msg.sender] = value;
+        allowances[spender][msg.sender] = value;
 
         emit Approve(msg.sender, spender, value);
         return true;
@@ -63,11 +63,11 @@ contract ERC20Token is IERC20{
 
     // approve tokens
     // sending transferFrom
-    function transferFrom (address from/*owner*/, address to, uint256 value) public returns (bool) {
-        require(allowance[msg.sender][from] >= value);
+    function transferFrom (address from/*owner*/, address to, uint256 value) external returns (bool) {
+        require(allowances[msg.sender][from] >= value);
         require(balances[from] >= value);
 
-        allowance[msg.sender][from] -= value;
+        allowances[msg.sender][from] -= value;
         balances[from] -= value;
 
         balances[to] += value;

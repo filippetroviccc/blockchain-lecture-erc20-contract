@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8d44bd63-06e0-4b6d-8bda-c6946483eb0b" name="Default Changelist" comment="" />
+    <list default="true" id="8d44bd63-06e0-4b6d-8bda-c6946483eb0b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/contracts/ERC20.sol" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/ERC20.sol" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/IERC20.sol" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/IERC20.sol" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -14,21 +17,30 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/contracts/ERC20.sol">
+        <entry file="file://$PROJECT_DIR$/contracts/IERC20.sol">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="59" column="20" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="20" />
+            <state relative-caret-position="232">
+              <caret line="8" column="73" selection-start-line="8" selection-start-column="73" selection-end-line="8" selection-end-column="73" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>totalS</find>
+      <find>allowance</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/contracts/IERC20.sol" />
         <option value="$PROJECT_DIR$/contracts/ERC20.sol" />
+        <option value="$PROJECT_DIR$/contracts/IERC20.sol" />
       </list>
     </option>
   </component>
@@ -38,6 +50,7 @@
     <option name="width" value="1934" />
     <option name="height" value="1037" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -59,11 +72,6 @@
               <item name="BEST TOKEN" type="b2602c69:ProjectViewProjectNode" />
               <item name="BEST TOKEN" type="462c0819:PsiDirectoryNode" />
               <item name="migrations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BEST TOKEN" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BEST TOKEN" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -100,19 +108,19 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1563953602936</updated>
-      <workItem from="1563953604332" duration="4557000" />
+      <workItem from="1563953604332" duration="5241000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4557000" />
+    <option name="totallyTimeSpent" value="5241000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1536" height="864" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.24869792" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.24869792" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.7372685" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
@@ -186,17 +194,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/contracts/IERC20.sol">
+    <entry file="file://$PROJECT_DIR$/contracts/ERC20.sol">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="22" selection-start-column="22" selection-end-column="22" />
+        <state relative-caret-position="928">
+          <caret line="32" column="22" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/contracts/ERC20.sol">
+    <entry file="file://$PROJECT_DIR$/contracts/IERC20.sol">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="59" column="20" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="20" />
+        <state relative-caret-position="232">
+          <caret line="8" column="73" selection-start-line="8" selection-start-column="73" selection-end-line="8" selection-end-column="73" />
         </state>
       </provider>
     </entry>
