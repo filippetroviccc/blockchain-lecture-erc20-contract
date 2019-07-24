@@ -4,7 +4,7 @@ import "./Migrations.sol";
 import "./IERC20.sol";
 
 contract ERC20Token is IERC20{
-
+    // default - 0
     uint256 public supply;
 
     // 0x13243234.. -> 34392849 BEST TOKENS
@@ -22,6 +22,11 @@ contract ERC20Token is IERC20{
     event Transfer(address from, address to, uint256 tokens);
     event Approve(address owner, address spender, uint256 tokens);
 
+    constructor(address initialAccount, uint256 totalSupply) public {
+        balances[initialAccount] = totalSupply;
+        supply = totalSupply;
+    }
+
     function totalSupply() external view returns (uint256) { // 0 gas
         return supply;
     }
@@ -37,8 +42,10 @@ contract ERC20Token is IERC20{
     // we want to send from caller -> to  = value
     // transfer -
     function transfer(address to, uint256 value) external returns (bool success) {
-        require(balances[msg.sender] >= value);
+        // "making sure" everything is ok
+        require(balances[msg.sender] >= value, "Sufficient funds");
 
+        // msg.sender contract caller
         balances[msg.sender] -= value;
         balances[to] += value;
 
@@ -77,7 +84,9 @@ contract ERC20Token is IERC20{
     }
 }
 
-// @TODO COMPILE
-// @TODO MIGRATE (deploy on local net, testnet)
+// changes
+
+// @TODO COMPILE [check]
+// @TODO MIGRATE [check] (deploy on local net, testnet)
 // @TODO TESTING
 // @TODO CREATING CUSTOM BEST TOKEN
