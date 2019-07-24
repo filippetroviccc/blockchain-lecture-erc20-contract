@@ -6,6 +6,12 @@ import "./IERC20.sol";
 contract ERC20Token is IERC20{
     // default - 0
     uint256 public supply;
+    uint256 public decimals = 18;
+    //4329409320492304902349 -STORED
+    // 432.9409320492304902349 - ACTUAL VALUE
+
+    string public symbol = 'BST';
+    string public tokenName = 'BEST token';
 
     // 0x13243234.. -> 34392849 BEST TOKENS
     mapping(address => uint256) public balances;
